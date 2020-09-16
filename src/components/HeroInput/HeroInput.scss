@@ -1,0 +1,62 @@
+$sizeFourty: 40px;
+$sizeTwenty: 20px;
+$sizeSIxteen: 16px;
+$sizeFourteen: 14px;
+$greyColor: #3c3c3c;
+
+.heroInput {
+  width: 100%;
+  margin-top: 80px;
+  a {
+    // 'travel/stay' links
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .options {
+    // input container
+    background-color: white;
+    margin-top: 10px;
+    border: 0.1px solid;
+    display: flex;
+    flex-direction: row;
+    .options-input {
+      // input element
+      width: 500px;
+      height: 50px;
+      padding: 20px 100px 60px 20px;
+      border-right: 0.1px solid $greyColor;
+      .question {
+        color: $greyColor;
+        font-size: $sizeFourteen;
+        padding-top: 5px;
+      }
+    }
+    .options-third-input {
+      height: 50px;
+      padding: 20px 50px 60px 20px;
+      display: grid;
+      grid-template-columns: 150px auto;
+      grid-gap: 200px;
+      .question {
+        color: $greyColor;
+        font-size: $sizeFourteen;
+        padding-top: 5px;
+      }
+      .submit-button {
+        padding: 10px;
+        font-weight: bold;
+        width: 120px;
+        text-align: center;
+        font-size: 9px;
+        text-align: center;
+        float: right;
+        margin-left: 10px;
+        color: white;
+      }
+    }
+  }
+}

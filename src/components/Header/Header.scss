@@ -1,0 +1,31 @@
+$sizeFourty: 40px;
+$sizeTwenty: 20px;
+$sizeSIxteen: 16px;
+$sizeFourteen: 14px;
+$greyColor: #3c3c3c;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  img {
+    // logo
+    height: 50px;
+    width: 80px;
+  }
+  .user {
+    // 'Login' text & menu icon container
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    .menuIcon {
+      position: relative;
+      left: 110px;
+      bottom: 27px;
+    }
+    span {
+      // 'Login' text
+      font-size: $sizeFourteen;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+$sizeFourty: 40px;
+$sizeTwenty: 20px;
+$sizeSIxteen: 16px;
+$sizeFourteen: 14px;
+$greyColor: #3c3c3c;
+
+.heroText {
+  margin-top: 70px;
+  color: white;
+  p:first-of-type {
+    // 'Stay tailored..' text
+    font-size: $sizeTwenty;
+  }
+  p {
+    // 'Dont waste..' text
+    font-size: $sizeFourteen;
+    margin-top: 10px;
+  }
+}

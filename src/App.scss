@@ -1,0 +1,451 @@
+$fontFamily: ("https://fonts.google.com/specimen/Poppins");
+$sizeFourty: 40px;
+$sizeTwenty: 20px;
+$sizeSIxteen: 16px;
+$sizeFourteen: 14px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $fontFamily;
+}
+
+// media queries
+
+/* small devices (galaxy S9/S9+) */
+@media only screen and (max-width: 360px) and (max-width: 374px) {
+  .heroSection {
+    width: 360px !important;
+    height: 560px !important;
+    .user {
+      position: absolute !important;
+      left: 600px !important;
+      span {
+        display: none;
+      }
+      div:nth-child(1) {
+        display: none; // hide login text, user icon, and '|' symbol
+      }
+      .menuIcon {
+        transform: translateX(-390px);
+        top: 0.3px !important;
+        color: wheat;
+      }
+    }
+    .heroContent {
+      width: 300px;
+      height: 100%;
+      margin-left: 38.5px;
+      margin-right: 38.5px;
+    }
+    .heroText {
+      p:first-of-type {
+        width: 250px;
+        font-weight: bold;
+      }
+      p:nth-child(2) {
+        display: none;
+      }
+    }
+    .heroInput {
+      .options {
+        display: flex;
+        flex-direction: column;
+        .options-input {
+          border: none;
+        }
+        .submit-button {
+          position: relative;
+          right: 205px;
+          top: 7px;
+        }
+      }
+    }
+  }
+  .packageSection {
+    height: 400px;
+    width: 315px !important;
+    .packageCards {
+      height: 750px;
+      margin-left: 30px;
+      .packageTitle {
+        visibility: hidden;
+      }
+      .packageTitle:after {
+        visibility: visible !important;
+        content: "Explore our trending stays";
+        position: relative;
+        right: 415px;
+        font-weight: bold;
+        font-size: $sizeTwenty;
+      }
+      .cardsContainer {
+        display: block !important;
+        .card {
+          margin-bottom: 50px;
+        }
+        .cardImage {
+          width: 315px !important;
+        }
+        a {
+          // 'view all stays' link
+          display: block !important;
+          text-decoration: none;
+          position: relative;
+          bottom: 15px;
+          color: rgb(55, 102, 245);
+          font-weight: bold;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+      .cardFooter {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100px 100px !important;
+        grid-gap: 110px !important;
+        .imgAndName {
+          display: grid;
+          grid-template-columns: 10px 10px !important;
+          grid-gap: 60px !important;
+          .alTayer {
+          }
+        }
+      }
+      .titleAndView {
+        a {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+/* small devices (iphone 6/7/8, X/XS ) */
+@media only screen and (min-width: 375px) and (max-width: 413px) {
+  .heroSection {
+    // display: block;
+    width: 414px !important;
+    height: 560px !important;
+    .user {
+      position: absolute !important;
+      left: 600px !important;
+      span {
+        display: none;
+      }
+      div:nth-child(1) {
+        display: none; // hide login text, user icon, and '|' symbol
+      }
+      .menuIcon {
+        transform: translateX(-375px);
+        top: 0.3px !important;
+        color: wheat;
+      }
+    }
+    .heroContent {
+      width: 315px;
+      height: 100%;
+      margin-left: 38.5px;
+      margin-right: 38.5px;
+      // padding-top: 10px;
+    }
+    .heroText {
+      p:first-of-type {
+        width: 250px;
+        font-weight: bold;
+      }
+      p:nth-child(2) {
+        display: none;
+      }
+    }
+    .heroInput {
+      .options {
+        display: flex;
+        flex-direction: column;
+        .options-input {
+          border: none;
+        }
+        .submit-button {
+          position: relative;
+          right: 190px;
+          top: 7px;
+        }
+      }
+    }
+  }
+  .packageSection {
+    height: 400px;
+    width: 315px !important;
+    .packageCards {
+      height: 750px;
+      margin-left: 30px;
+      .packageTitle {
+        visibility: hidden;
+      }
+      .packageTitle:after {
+        visibility: visible !important;
+        content: "Explore our trending stays";
+        position: relative;
+        right: 415px;
+        font-weight: bold;
+        font-size: $sizeTwenty;
+      }
+      .cardsContainer {
+        display: block !important;
+        .card {
+          margin-bottom: 50px;
+        }
+        .cardImage {
+          width: 315px !important;
+        }
+        a {
+          // 'view all stays' link
+          display: block !important;
+          text-decoration: none;
+          position: relative;
+          bottom: 15px;
+          color: rgb(55, 102, 245);
+          font-weight: bold;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+      .cardFooter {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100px 100px !important;
+        grid-gap: 110px !important;
+        .imgAndName {
+          display: grid;
+          grid-template-columns: 10px 10px !important;
+          grid-gap: 60px !important;
+          .alTayer {
+          }
+        }
+      }
+      .titleAndView {
+        a {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+/* small devices (iphone 6/7/8 plus) */
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+  .heroSection {
+    width: 414px !important;
+    height: 560px !important;
+    .user {
+      position: absolute !important;
+      left: 600px !important;
+      span {
+        display: none;
+      }
+      div:nth-child(1) {
+        display: none; // hide login text, user icon, and '|' symbol
+      }
+      .menuIcon {
+        transform: translateX(-350px);
+        top: 0.3px !important;
+        color: wheat;
+      }
+    }
+    .heroContent {
+      width: 354px;
+      height: 100%;
+      margin-left: 38.5px;
+      margin-right: 38.5px;
+    }
+    .heroText {
+      p:first-of-type {
+        width: 250px;
+        font-weight: bold;
+      }
+      p:nth-child(2) {
+        display: none;
+      }
+    }
+    .heroInput {
+      .options {
+        display: flex;
+        flex-direction: column;
+        .options-input {
+          border: none;
+        }
+        .submit-button {
+          position: relative;
+          right: 160px;
+          top: 5px;
+        }
+      }
+    }
+  }
+  .packageSection {
+    height: 400px;
+    width: 354px !important;
+    .packageCards {
+      height: 750px;
+      margin-left: 30px;
+      .packageTitle {
+        visibility: hidden;
+      }
+      .packageTitle:after {
+        visibility: visible !important;
+        content: "Explore our trending stays";
+        position: relative;
+        right: 415px;
+        font-weight: bold;
+        font-size: $sizeTwenty;
+      }
+      .cardsContainer {
+        display: block !important;
+        .card {
+          margin-bottom: 50px;
+        }
+        .cardImage {
+          width: 354px !important;
+        }
+        a {
+          // 'view all stays' link
+          display: block !important;
+          text-decoration: none;
+          position: relative;
+          bottom: 15px;
+          color: rgb(55, 102, 245);
+          font-weight: bold;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+      .cardFooter {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100px 100px !important;
+        grid-gap: 150px !important;
+        .imgAndName {
+          display: grid;
+          grid-template-columns: 10px 10px !important;
+          grid-gap: 60px !important;
+          .alTayer {
+          }
+        }
+      }
+      .titleAndView {
+        a {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
+
+/* Large devices (laptops/ipad) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .heroSection {
+    width: 900px !important;
+    height: 560px !important;
+    .user {
+      position: absolute !important;
+      left: 600px !important;
+      span {
+        display: none;
+      }
+      div:nth-child(1) {
+        display: none; // hide login text, user icon, and '|' symbol
+      }
+      .menuIcon {
+        position: relative;
+        left: 100px !important;
+        top: 0.3px !important;
+      }
+    }
+    .heroContent {
+      width: 691px;
+      height: 100%;
+      margin-left: 38.5px;
+      margin-right: 38.5px;
+    }
+    .heroText {
+      p:first-of-type {
+        width: 250px;
+        font-weight: bold;
+      }
+      p:nth-child(2) {
+        display: none;
+      }
+    }
+    .heroInput {
+      .options {
+        display: flex;
+        flex-direction: column;
+        .options-input {
+          border: none;
+        }
+      }
+    }
+  }
+  .packageSection {
+    height: 400px;
+    width: 100%;
+    .packageCards {
+      height: 750px;
+      margin-left: 55px;
+      .packageTitle {
+        visibility: hidden !important;
+      }
+      .packageTitle:after {
+        visibility: visible !important;
+        content: "Explore our trending stays";
+        position: relative;
+        right: 415px;
+        font-weight: bold;
+        font-size: $sizeTwenty;
+      }
+      .cardsContainer {
+        display: block !important;
+        .card {
+          margin-bottom: 50px;
+        }
+        .cardImage {
+          width: 40% !important;
+        }
+        a {
+          // 'view all stays' link
+          display: block !important;
+          text-decoration: none;
+          position: relative;
+          bottom: 15px;
+          color: rgb(55, 102, 245);
+          font-weight: bold;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+      .cardFooter {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 200px 100px !important;
+        grid-gap: 330px !important;
+        .imgAndName {
+          display: grid;
+          grid-template-columns: 10px 10px !important;
+          grid-gap: 100px !important;
+          .alTayer {
+          }
+        }
+      }
+      .titleAndView {
+        a {
+          display: none;
+        }
+      }
+    }
+  }
+}

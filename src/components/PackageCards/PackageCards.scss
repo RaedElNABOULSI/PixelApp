@@ -1,0 +1,94 @@
+$sizeFourty: 40px;
+$sizeTwenty: 20px;
+$sizeSIxteen: 16px;
+$sizeFourteen: 14px;
+$greyColor: #3c3c3c;
+$carIcon: "\f1b9";
+$suiteIcon: "\f236";
+
+.packageCards {
+  width: 1632px;
+  height: 750px;
+  margin-left: 144px;
+  margin-right: 144px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  p:second-of-type {
+    // 'Checkout out ..' text
+    font-size: $sizeFourty;
+  }
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: 524px 524px 524px;
+    grid-gap: 30px;
+    height: 80%;
+    margin-top: 40px;
+    .cardImage {
+      height: 50%;
+      width: 100%;
+    }
+    ul {
+      //trip features(spa,car....)
+      list-style: none;
+    }
+    ul .park:before {
+      padding-right: 15px;
+      font-family: FontAwesome;
+      content: $carIcon;
+    }
+    ul .suite:before {
+      padding-right: 15px;
+      font-family: FontAwesome;
+      content: $suiteIcon;
+    }
+    ul .car:before {
+      padding-right: 15px;
+      font-family: FontAwesome;
+      content: $carIcon;
+    }
+    ul .spa:before {
+      padding-right: 15px;
+      font-family: FontAwesome;
+      content: $suiteIcon;
+    }
+    .cardFooter {
+      // image, author name, & trip price
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 250px;
+      .imgAndName {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+      .cardFooterImage {
+        border-radius: 50%;
+        height: 50px;
+        width: 60px;
+      }
+    }
+    .card {
+      .cardText {
+        padding-top: 20px;
+        padding-left: 20px;
+      }
+    }
+  }
+  .titleAndView {
+    display: grid;
+    grid-template-columns: auto auto;
+    a {
+      text-decoration: none;
+      position: relative;
+      left: 550px;
+      color: rgb(55, 102, 245);
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.viewLinkResponsive {
+  display: none;
+}
