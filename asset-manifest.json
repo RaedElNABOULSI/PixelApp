@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/PixelApp/static/css/main.ac454218.chunk.css",
+    "main.js": "/PixelApp/static/js/main.11256c94.chunk.js",
+    "main.js.map": "/PixelApp/static/js/main.11256c94.chunk.js.map",
+    "runtime-main.js": "/PixelApp/static/js/runtime-main.7cb8ca8d.js",
+    "runtime-main.js.map": "/PixelApp/static/js/runtime-main.7cb8ca8d.js.map",
+    "static/css/2.4abefa25.chunk.css": "/PixelApp/static/css/2.4abefa25.chunk.css",
+    "static/js/2.60c4e14a.chunk.js": "/PixelApp/static/js/2.60c4e14a.chunk.js",
+    "static/js/2.60c4e14a.chunk.js.map": "/PixelApp/static/js/2.60c4e14a.chunk.js.map",
+    "index.html": "/PixelApp/index.html",
+    "precache-manifest.cbf38a9aa176076965a4bd14a6a42fb6.js": "/PixelApp/precache-manifest.cbf38a9aa176076965a4bd14a6a42fb6.js",
+    "service-worker.js": "/PixelApp/service-worker.js",
+    "static/css/2.4abefa25.chunk.css.map": "/PixelApp/static/css/2.4abefa25.chunk.css.map",
+    "static/css/main.ac454218.chunk.css.map": "/PixelApp/static/css/main.ac454218.chunk.css.map",
+    "static/js/2.60c4e14a.chunk.js.LICENSE.txt": "/PixelApp/static/js/2.60c4e14a.chunk.js.LICENSE.txt",
+    "static/media/desert.jpg": "/PixelApp/static/media/desert.337b78d6.jpg",
+    "static/media/font-awesome.min.css": "/PixelApp/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/Hero.scss": "/PixelApp/static/media/hero-sea.43100580.jpg",
+    "static/media/logo.jpg": "/PixelApp/static/media/logo.b3b9be72.jpg",
+    "static/media/park.jpg": "/PixelApp/static/media/park.5d8880c8.jpg",
+    "static/media/river.jpg": "/PixelApp/static/media/river.4e79f923.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7cb8ca8d.js",
+    "static/css/2.4abefa25.chunk.css",
+    "static/js/2.60c4e14a.chunk.js",
+    "static/css/main.ac454218.chunk.css",
+    "static/js/main.11256c94.chunk.js"
+  ]
+}
